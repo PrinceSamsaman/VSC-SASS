@@ -1,0 +1,50 @@
+// VERSION
+.version {
+    background-color: $clr-darker;
+    p {
+        color: $clr-light;
+        text-align: center;
+        margin: 0 4rem;
+        a {
+            color: $clr-primary;
+            box-shadow: $shadow;
+        }
+    }
+}
+
+// BANNER
+.banner {
+    .container {
+        background-color: $clr-dark;
+    }
+    &__wrapper {
+        color: $clr-light;
+        text-align: center;
+        margin: 0 5rem;
+        &__text {
+            h1 {
+                font-size: 4rem;
+                font-weight: lighter;
+                strong {
+                    font-weight: bold;
+                }
+            }
+            p {
+                font-size: 1.5rem;
+                opacity: 50%;
+            }
+        } 
+        &__dl {
+            // background-color: $clr-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left__button.btn {
+                padding: 0 1rem;
+            }
+            .right__button.btn {
+                padding: 1.1rem 2rem;
+            }
+        }
+    }
+}
