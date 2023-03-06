@@ -29,25 +29,28 @@
             }
         }
         .header__nav{
-            z-index: -1;
+            z-index: 1;
             position: absolute;
-            top: -100rem;
+            top: 6rem;
             left: 0;
             background-color: $clr-dark;
             width: 100vw;
             width: 100%;
-            height: 100%;
+            height: 0;
+            overflow: hidden;
             transition: .7s ease;
             max-height: 36.8rem;
             @include mediaQuery($desktop){
                 background-color: unset;
                 top: 0;
+                height: unset;
                 z-index: unset;
                 display: flex;
                 gap: 5rem;
                 position: unset;
                 width: 100%;
                 overflow: hidden;
+              
             }
             ul{
                 @include mediaQuery($desktop){
@@ -126,7 +129,7 @@
                 }
             }
             &.open{
-                top: 6rem;
+                height: 40vh;
                 overflow-y: scroll;
                 @include mediaQuery($desktop){
                     max-height: 36rem;
@@ -163,3 +166,5 @@
     }
         
     }
+
+    

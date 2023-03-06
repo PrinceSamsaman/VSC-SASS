@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.css">
     <script defer src="https://kit.fontawesome.com/9c749cac5e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>VS-Code SASS</title>
 </head>
 <body>
@@ -50,39 +51,200 @@
         <p><a href="">Version 1.76</a> is now available! Read about the new featuresand fixes from February.</p>
     </div>
 <!-- BANNER -->
-    <secion class="banner">
+    <div class="banner">
         <div class="container">
-            <div class="banner__wrapper">
-                <div class="banner__wrapper__text">
-                    <h1>Code Editing. <strong>Redefined.</strong></h1>
-                    <p>Free. Built in open source. Runs Everywhere.</p>
-                </div>
-                <div class="banner__wrapper__dl">
-                    <div class="left__button btn">
-                        <button> <a href=""></a> Download for Windows.</button><br>
-                        <small>Stable Build</small> 
+            <div class="banner__wrapper py--4">
+                <div class="left">
+                    <div class="banner__wrapper__text">
+                        <h1>Code Editing.</h1>
+                        <h2>Redefined</h2>
+                        <p>Free. Built in open source. Runs Everywhere.</p>
                     </div>
-                    <div class="right__button btn">
-                        <button><i class="fas fa-angle-down"></i></button>
+                    <div class="banner__wrapper__dl">
+                        <div class="left__button btn">
+                            <button> <a href=""></a> Download for Windows.</button><br>
+                            <small>Stable Build</small> 
+                        </div>
+                        <div class="right__button btn">
+                            <button><a href=""><i class="fas fa-angle-down"></i></a></button>
+                        </div>
+                        
+                        
                     </div>
-                    
-                    
-                </div>
-                <div class="banner__wrapper__privacy">
-                    <h6><a href="">Web</a>, <a href="">Insiders editon</a>, or <a href="">other platforms</a> </h6>
-                    <p>By using VS Code, you agree to its <br><span>license and privacy statement</span>.</p>
+                    <div class="banner__wrapper__privacy">
+                        <h6><a href="">Web</a>, <a href="">Insiders editon</a>, or <a href="">other platforms</a> </h6>
+                        <p>By using VS Code, you agree to its <br><span>license and privacy statement</span>.</p>
+                    </div>
                 </div>
                 
+                
                 <div class="banner__wrapper__image">
-                    <img src="./img/home-screenshot-win.png" alt="">
+                    <img src="./img/home-screenshot-win-lg.png" alt="">
                 </div>
 
             </div>
         </div>
 
         
-    </secion>
+    </div>
+
+    <section class="new">
+        <div class="container">
+            <div class="new__wrapper">
+                <div class="new__item">
+                    <a href=""><i class="fa-regular fa-lightbulb"></i><br>
+                    <h3>IntelliSence</h3></a>
+                </div>
+                <div class="new__item">
+                    <a href=""><i class="fa-solid fa-play"></i><br>
+                    <h3>Run & Debug</h3></a>
+                </div>
+                <div class="new__item">
+                    <a href=""><i class="fa-solid fa-code-branch"></i><br>
+                    <h3>BUilt-in Git</h3></a>
+                </div>
+                <div class="new__item">
+                    <a href=""><i class="fa-regular fa-lightbulb"></i><br>
+                    <h3>Extensions</h3></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <seciton class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper py--1">
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+                
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+
+                <div class="feedback__card">
+                    <div class="fb-img">
+                      <div class="inner">
+                        <img src="./img/jadbox.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4><a href="">Jonathan Dunlap</a> </h4>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div> 
+                    <div class="user">
+                        <small><a href="">@jadbox</a></small>
+                    </div>
+                    <div class="text">
+                        <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+    </seciton>
 
     <script src="./javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+        // import {tns} from './src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.feedback__wrapper',
+          items: 3,
+          slideBy: 'page',
+          autoplay: false, 
+          controlsText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+          axis:"horizontal",
+          responsive:{
+            1020:{
+                items:1,
+            }
+          },
+        });
+        </script>
 </body>
 </html>
