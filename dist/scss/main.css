@@ -619,14 +619,23 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #0066B8;
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06);
 }
+.version p a:hover {
+  text-decoration: underline;
+}
 
-.banner .container {
+.banner {
   background-color: #2C2C32;
+  z-index: -1;
 }
 .banner__wrapper {
   color: #FFFFF9;
   text-align: center;
   margin: 0 5rem;
+}
+@media screen and (min-width: 120rem) {
+  .banner__wrapper {
+    display: flex;
+  }
 }
 .banner__wrapper__text h1 {
   font-size: 4rem;
@@ -643,10 +652,46 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
+  gap: 0.2rem;
+  cursor: pointer;
 }
 .banner__wrapper__dl .left__button.btn {
-  padding: 0 1rem;
+  padding: 1.2rem 3.7rem;
+  line-height: 1.7rem;
+  cursor: pointer;
+}
+.banner__wrapper__dl .left__button.btn small {
+  font-size: 1.1rem;
+  font-weight: lighter;
 }
 .banner__wrapper__dl .right__button.btn {
-  padding: 1.1rem 2rem;
+  padding: 1.85rem 1.5rem;
+  font-weight: lighter;
+}
+.banner__wrapper__privacy h6 {
+  background-color: #25252b;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding: 1rem 2rem;
+  margin: 0 4rem;
+  width: 2rem 0;
+  border-radius: 1rem;
+}
+.banner__wrapper__privacy h6 a {
+  color: #0066B8;
+}
+.banner__wrapper__privacy h6 a:hover {
+  text-decoration: underline;
+}
+.banner__wrapper__privacy p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+.banner__wrapper__privacy p span {
+  color: #0066B8;
+  cursor: pointer;
+}
+.banner__wrapper__privacy p span:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

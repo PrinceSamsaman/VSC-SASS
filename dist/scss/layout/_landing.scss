@@ -8,19 +8,25 @@
         a {
             color: $clr-primary;
             box-shadow: $shadow;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
 
 // BANNER
 .banner {
-    .container {
-        background-color: $clr-dark;
-    }
+    background-color: $clr-dark;
+    z-index: -1;
     &__wrapper {
         color: $clr-light;
         text-align: center;
         margin: 0 5rem;
+        @include mediaQuery($desktop){
+            display: flex;
+            // justify-content: space-between;
+        }
         &__text {
             h1 {
                 font-size: 4rem;
@@ -35,16 +41,57 @@
             }
         } 
         &__dl {
-            // background-color: $clr-primary;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 2rem 0;
+            gap: .2rem;
+            cursor: pointer;
             .left__button.btn {
-                padding: 0 1rem;
+                padding: 1.2rem 3.7rem;
+                line-height: 1.7rem;
+                cursor: pointer;
+                small {
+                    font-size: 1.1rem;
+                    font-weight: lighter;
+                    
+                }
             }
             .right__button.btn {
-                padding: 1.1rem 2rem;
+                padding: 1.85rem 1.5rem;
+                font-weight: lighter;
+                
+            }   
+        }
+        &__privacy {
+            h6 {
+                background-color: $clr-darker;
+                font-size: 1.4rem;
+                font-weight: lighter;
+                padding: 1rem 2rem;
+                margin: 0 4rem;
+                width: 2rem 0;
+                border-radius: 1rem;
+                a {
+                    color: $clr-primary;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            p {
+                font-size: 1.3rem;
+                margin: 1rem 0;
+                span {
+                    color: $clr-primary;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
+        
+           
     }
 }
