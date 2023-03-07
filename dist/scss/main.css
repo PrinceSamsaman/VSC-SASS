@@ -975,4 +975,108 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 #extension img:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
+}
+
+.code {
+  background-color: #f5f5f5;
+}
+.code .container {
+  text-align: center;
+}
+.code__wrapper {
+  margin: 0 auto;
+}
+.code__wrapper h2 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  text-align: center;
+  padding: 1rem 0;
+}
+.code__wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem 0;
+  align-items: center;
+}
+.code__wrapper ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.code__wrapper a {
+  color: #0066B8;
+}
+.code__wrapper a:hover {
+  color: #0059a1;
+  text-decoration: underline;
+}
+.code .gsn {
+  text-align: center;
+}
+.code .gsn a:last-child {
+  padding: 1.5rem 3rem;
+  margin-bottom: 3rem;
+}
+.code .gsn a:last-child:hover {
+  background: #0059a1;
+}
+
+.os__wrapper {
+  padding: 3rem 0;
+}
+@media screen and (min-width: 120rem) {
+  .os__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+  }
+}
+.os__wrapper .os__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.os__wrapper .os__item img {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.os__wrapper .os__item a {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.os__wrapper .os__item a small {
+  font-size: 1rem;
+}
+.os__wrapper .os__item table:last-child {
+  height: 7rem;
+}
+.os__wrapper .os__item table {
+  height: 11rem;
+}
+.os__wrapper .os__item table tr td:first-child {
+  text-align: center;
+}
+.os__wrapper .os__item table tr td h4 {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+.os__wrapper .os__item table tr td a {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0 0.3rem;
+  margin-right: 0.4rem;
+}
+.os__wrapper .os__item .os__btn {
+  display: flex;
+  gap: 0.5rem;
+}
+.os__wrapper .os__item .os__btn a:first-child {
+  padding: 1rem 2.5rem;
+}
+.os__wrapper .os__item .os__btn a:last-child {
+  padding: 1rem 1.5rem;
 }/*# sourceMappingURL=main.css.map */
